@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scripted Data</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Scripted Data</h2>
+        <ul class="list-group">
+            {% for item in data %}
+            <li class="list-group-item">
+                <h4>{{ item.title }}</h4>
+                <p>{{ item.content }}</p>
+                <small>Scripted from <a href="{{ item.url }}" target="_blank">{{ item.url }}</a> on {{ item.scripted_at }}</small>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
