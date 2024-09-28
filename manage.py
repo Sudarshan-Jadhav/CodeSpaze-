@@ -6,7 +6,11 @@ import sys
 
 def main():
     """Run administrative tasks."""
+<<<<<<< HEAD
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'webscraper.settings')
+=======
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'autoscript.settings')
+>>>>>>> 6474a28e206d5ba37f2829c84cca49fae3134a4f
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
